@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ぴよー～まるっこいモフモフ～</title>
+<link rel="shortcut icon" href="img/favicon.png" >
+
+<script type="text/javascript"> 
+<!-- 
+
+if (document.images) {
+
+	// 設定開始（使用する画像を設定してください）
+
+	// 通常の画像
+	var img0 = new Image();
+	img0.src = "img/piyo.png";
+
+	// ポイント時の画像1
+	var img1 = new Image();
+	img1.src = "img/piyotoha.png";
+
+	// ポイント時の画像2
+	var img2 = new Image();
+	img2.src = "img/piyonakama.png";
+
+	// ポイント時の画像3
+	var img3 = new Image();
+	img3.src = "img/piyonews.png";
+
+	// 設定終了
+	var img4 = new Image();
+	img4.src = "img/piyogame.png";
+
+	var img5 = new Image();
+	img5.src = "img/piyouranai.png";
+
+	var img6 = new Image();
+	img6.src = "img/piyomanga.png";
+
+	var img7 = new Image();
+	img7.src = "img/piyogoods.png";
+
+	var img8 = new Image();
+	img8.src = "img/piyojitai.png";
+
+
+}
+
+// ポイント時の処理
+function On(name) {
+
+	if (document.images) {
+
+		document.images['def'].src = eval(name + '.src');
+
+	}
+
+}
+
+// 放した時の処理
+function Off() {
+
+	if (document.images) {
+
+		document.images['def'].src = img0.src;
+
+	}
+
+}
+
+// -->
+</script>
+  <link rel="stylesheet" href="css/shibuya.css" media="all">
+  <link rel="stylesheet" href="css/index.css" media="all">
+  <link rel="stylesheet" href="css/menutop.css" media="all">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/menutop.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="wrapper">
+
+<header>
+
+<!--▼▼ハンバーガーメニューここから▼▼-->
+<div class="hm_wrap">
+	<input id="hm_menu" type="checkbox" name="hm_menu" class="hm_menu_check"/><img src="img/piyologo.png" width="120" alt="ぴよーとは">
+	<label for="hm_menu" class="hm_btn"></label>
+	<h2 class="hm_title"><img src="img/button.png" alt=""></h2>
+		<nav class="hm_menu_wrap">
+			<ul class="hm_list">
+				<li><a href="../PiyohTop/index.html">&emsp;ぴよーTOP</a></li>
+				<li><a href="../PiyohIntroduction/what'sPiyoh.html">&emsp;ぴよーとは</a></li>
+				<li><a href="../PiyohNakama/Piyohnakama.html">&emsp;ぴよーずかん</a></li>
+				<li><a href="../PiyohNews/piyonews.html">&emsp;ぴよーニュース</a></li>
+				<li><a href="../PiyohGame/piyohgame.html">&emsp;ぴよ―ゲーム</a></li>
+				<li><a href="../PiyohUranai/PiyohUranaiTop.html">&emsp;ぴよーうらない</a></li>
+				<li><a href="../Piyohmanga/PiyohManga.html">&emsp;ぴよーまんが</a></li>
+				<li><a href="../PiyohGoods/PiyohGoods.html">&emsp;ぴよーグッズ</a></li>
+			</ul>
+		</nav>
+</div>
+<!--▲▲ハンバーガーメニューここまで▲▲-->
+</header>
+<h1><img src="img/piyologo.png"></h1>
+
+<article>
+<section>
+<div class="piyo1">
+<a href="../PiyohIntroduction/what'sPiyoh.html" class="btn" onMouseOver="On('img1')" onMouseOut="Off()"><br>ぴよー<br>とは</a>
+<a href="../PiyohNakama/Piyohnakama.html" class="btn" onMouseOver="On('img2')" onMouseOut="Off()"><br>ぴよー<br>ずかん</a>
+<a href="../PiyohNews/piyonews.html" class="btn" onMouseOver="On('img3')" onMouseOut="Off()"><br>ぴよー<br>ニュース</a>
+<a href="../PiyohGame/piyohgame.html" class="btn" onMouseOver="On('img4')" onMouseOut="Off()"><br>ぴよー<br>ゲーム</a>
+</div><!--piyo1-->
+<div class="piyo1">
+<a href="../PiyohUranai/PiyohUranaiTop.html" class="btn" onMouseOver="On('img5')" onMouseOut="Off()"><br>ぴよー<br>うらない</a>
+<a href="../Piyohmanga/PiyohManga.html" class="btn" onMouseOver="On('img6')" onMouseOut="Off()"><br>ぴよー<br>まんが</a>
+<a href="#" class="btn1" onMouseOver="On('img8')" onMouseOut="Off()"><br><img src="img/piyo.png" alt="これ" name="def"></a>
+<a href="../PiyohGoods/PiyohGoods.html" class="btn" onMouseOver="On('img7')" onMouseOut="Off()"><br>ぴよー<br>グッズ</a>
+</div><!--piyo2-->
+</section>
+</article>
+<footer>
+  <p><small>&copy;ぴよー～まるっこいモフモフ～.</small></p>
+</footer>
+</div><!--wrapper-->
+</body>
+</html>

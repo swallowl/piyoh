@@ -1,0 +1,153 @@
+img, object, embed, video {max-width: 100%;height:auto;}
+
+body{
+	font-family: Helvetica , "游ゴシック", sans-serif;
+	font-size:130%;
+	letter-spacing:0.2em;
+	line-height:140%;
+	background:#fffacd;}
+#wrapper{width:92%;
+}
+header{
+margin-top:6%;
+}
+.pagetop{
+display:none;
+}
+
+h1{
+margin-top:-6%;
+width:25%;
+position:relative;
+left:70%;
+}
+
+section{
+margin-top:1%;
+text-align:center;}
+.btn{
+margin:2% 3%;
+    display: inline-block;
+    text-decoration: none;
+    background: #87befd;
+    color: #FFF;
+    width: 140px;
+    height: 140px;
+    line-height:170%;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 5px #87befd;
+    border: dashed 1px #FFF;
+    transition: .4s;
+}
+
+.btn:hover{
+    background: #668ad8;
+     box-shadow: 0px 0px 0px 5px #668ad8;
+}
+
+.btn1{
+padding:3%;
+    display: inline-block;
+/    background: url("../img/piyo.png" );
+	background-size:100%;
+	background-repeat: no-repeat;
+  width: 100%;
+	max-width:140px;
+	min-width:140px;
+   height: 140px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.piyo1{
+margin:0 0 1%;
+padding:0 8% 0;
+}
+
+footer{
+font-size:80%;
+text-align:center;
+}
+@media only screen and (max-width: 1030px) {
+
+.btn{
+	width:100px;
+	width:100px;
+   height: 100px;
+    line-height:140%;
+	font-size:0.8em;
+}
+
+.btn1{
+	max-width:100px;
+	min-width:100px;
+   height: 100px;
+margin-top:-3%;}
+}
+
+@media only screen and (max-width: 780px) {
+.btn{
+	width:70px;
+	width:70px;
+   height: 70px;
+    line-height:140%;
+	font-size:0.6em;
+margin-top:7%;
+}
+
+.btn1{
+	max-width:70px;
+	min-width:70px;
+   height: 70px;
+margin-top:-3%;
+}
+@media only screen and (max-width: 590px) {
+.btn{
+	width:60px;
+	width:60px;
+   height: 60px;
+    line-height:120%;
+	font-size:0.6em;
+margin-top:7%;
+}
+
+.btn1{
+	max-width:60px;
+	min-width:60px;
+   height: 60px;
+margin-top:-3%;
+
+
+}
+@media only screen and (max-width: 540px) {
+h1{display:none;}
+#wrapper{
+width:60%;
+margin:20% auto;
+
+}
+.btn{
+	width:100px;
+	width:100px;
+   height: 100px;
+    line-height:140%;
+	font-size:0.8em;
+}
+
+.btn1{
+	max-width:100px;
+	min-width:100px;
+   height: 100px;
+margin-top:-3%;
+}
+footer{
+font-size:0.6em;
+text-align:center;
+}
+
+
+}
+
