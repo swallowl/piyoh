@@ -1,0 +1,19 @@
+﻿.fancybox-custom .fancybox-skin {
+	box-shadow: 0 0 50px #222;
+}
+
+body {
+	max-width: 100%;
+	margin: 0 auto;
+}
+#wrapper {
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+article {
+	width: 90%;
+	margin: auto;
+}
+section {
+}

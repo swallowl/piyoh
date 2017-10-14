@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ぴよーまんが</title>
+<link rel="shortcut icon" href="img/favicon.png" >
+
+  <link rel="stylesheet" href="css/shibuya.css" media="all">
+  <link rel="stylesheet" href="css/Piyohnakama.css" media="all">
+  <link rel="stylesheet" href="css/menutop.css" media="all">
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+ <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+ <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-buttons.css">
+ <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-thumbs.css">
+ <link rel="stylesheet" type="text/css" href="css/fancybox_style.css">
+
+ <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+ <script type="text/javascript" src="js/jquery.mousewheel.pack.js?v=3.1.3"></script>
+ <script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+ <script type="text/javascript" src="js/jquery.fancybox-buttons.js?v=1.0.5"></script>
+ <script type="text/javascript" src="js/fancybase.js"></script>
+ <script type="text/javascript" src="js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+ <script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.6"></script>
+</head>
+<body>
+<div id="wrapper">
+<p class="pagetop"><a href="#wrap">　TOPへ<br><img src="img/img1.gif" width="15%" alt="" onclick="document.getElementById('target').src = 'img/img1.gif'">
+<img id="target" src="img/img1.gif"width="5%" alt=""></a></p>
+
+
+<!-- header -->
+
+<header>
+<!--▼▼ハンバーガーメニューここから▼▼-->
+<div class="hm_wrap">
+	<input id="hm_menu" type="checkbox" name="hm_menu" class="hm_menu_check"/><a href="../PiyohTop/index.html"><img src="img/piyologo.png" width="120" alt="ぴよーとは"></a>
+	<label for="hm_menu" class="hm_btn"></label>
+	<h2 class="hm_title"><img src="img/button.png" alt=""></h2>
+		<nav class="hm_menu_wrap">
+			<ul class="hm_list">
+				<li><a href="../PiyohTop/index.html">&emsp;ぴよーTOP</a></li>
+				<li><a href="../PiyohIntroduction/what'sPiyoh.html">&emsp;ぴよーとは</a></li>
+				<li><a href="../PiyohNakama/Piyohnakama.html">&emsp;ぴよーずかん</a></li>
+				<li><a href="../PiyohNews/piyonews.html">&emsp;ぴよーニュース</a></li>
+				<li><a href="../PiyohGame/piyohgame.html">&emsp;ぴよ―ゲーム</a></li>
+				<li><a href="../PiyohUranai/PiyohUranaiTop.html">&emsp;ぴよーうらない</a></li>
+				<li><a href="../Piyohmanga/PiyohManga.html">&emsp;ぴよーまんが</a></li>
+				<li><a href="../PiyohGoods/PiyohGoods.html">&emsp;ぴよーグッズ</a></li>
+
+			</ul>
+		</nav>
+</div>
+<!--▲▲ハンバーガーメニューここまで▲▲-->
+<script>
+$(document).ready(function() {
+    var pagetop = $('.pagetop');
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+        }
+    });
+    pagetop.click(function () {
+        $('body, html').animate({ scrollTop: 0 }, 500);
+        return false;
+    });
+});
+</script>
+</header>
+<article>
+  <div id="shiritai">
+</div><!--siritai-->
+<div id="seiretsu">
+<br>
+<br>
+<br>
+<section id="piyohzukan"><p><img src="img/piyozukan.png" alt=""></p></section>
+<div id="piyonakama">
+<ul>
+	<li>
+		<a class="group" rel="group01" href="img/azuki02.png" title=""/>
+		<img src="img/azuki.png" alt="">
+		</a>
+	</li>
+<!--	<li>
+		<a class="group" rel="group01" href="img/kipiyo02.png" title=""/>
+		<img src="img/kipiyo.png" alt="">
+		</a>
+	</li>
+	<li>
+		<a class="group" rel="group01" href="img/kinako02.png" title=""/>
+		<img src="img/kinako.png" alt="">
+		</a>
+	</li>-->
+</ul>
+<!--<ul>
+	<li>
+		<a class="group" rel="group01" href="img/azuki02.png" title=""/>
+		<img src="img/azuki.png" alt="">
+		</a>
+	</li>
+	<li>
+		<a class="group" rel="group01" href="img/daizu02.png" title=""/>
+		<img src="img/daizu.png" alt="">
+		</a>
+	</li>
+	<li>
+		<a class="group" rel="group01" href="img/hana02.png" title=""/>
+		<img src="img/hana.png" alt="">
+		</a>
+	</li>
+</ul>
+<ul>
+
+	<li>
+		<a class="group" rel="group01" href="img/uzura02.png" title=""/>
+		<img src="img/uzura.png" alt="">
+		</a>
+	</li>
+
+	<li>
+		<a class="group" rel="group01" href="img/kogeru02.png" title=""/>
+		<img src="img/kogeru.png" alt="">
+		</a>
+	</li>
+	<li>
+		<a class="group" rel="group01" href="img/kuro02.png" title=""/>
+		<img src="img/kuro.png" alt="">
+		</a>
+	</li>
+</ul>
+<ul>
+
+	<li>
+		<a class="group" rel="group01" href="img/siro02.png" title=""/>
+		<img src="img/siro.png" alt="">
+		</a>
+	</li>	<li>
+		<a class="group" rel="group01" href="img/kafi02.png" title=""/>
+		<img src="img/kafi.png" alt="">
+		</a>
+	</li>
+	<li>
+		<a class="group" rel="group01" href="img/kintoki02.png" title=""/>
+		<img src="img/kintoki.png" alt="">
+		</a>
+	</li>
+</ul>
+<ul>
+
+	<li>
+		<a class="group" rel="group01" href="img/uguisu02.png" title=""/>
+		<img src="img/uguisu.png" alt="">
+		</a>
+	</li>
+	<li>
+		<a class="group" rel="group01" href="img/endou02.png" title=""/>
+		<img src="img/endou.png" alt="">
+		</a>
+	</li>
+	<li>
+		<a class="group" rel="group01" href="img/edama02.png" title=""/>
+		<img src="img/edama.png" alt="">
+		</a>
+	</li>
+</ul>-->
+</div><!--piyonakama-->
+</div><!--seirestu-->
+<section id="comment"><p>ぴよーまんがは不定期更新！お楽しみに！！</p></section>
+
+</article>
+<br>
+<a href="../PiyohTop/index.html" style="margin:45%;">もどる</a>
+
+<footer>
+  <p><small>&copy;ぴよー～まるっこいモフモフ～.</small></p>
+</footer>
+</div><!--wrapper-->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".group").fancybox({
+            cyclic: true
+        });
+    });
+</script>
+
+</body>
+</html>
