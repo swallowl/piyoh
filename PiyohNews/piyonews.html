@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>ぴよーニュース</title>
+<link rel="shortcut icon" href="img/favicon.png" >
+
+<link rel="stylesheet" href="css/shibuya.css" type="" />
+<link rel="stylesheet" href="css/menutop.css" type="" />
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+<div id="wrapper">
+<header>
+<!--<p class="pagetop"><a href="#wrap">　TOPへ<br><img src="img/img1.gif" width="15%" alt="" onclick="document.getElementById('target').src = 'img/img1.gif'">
+<img id="target" src="img/img1.gif"width="5%" alt=""></a></p>-->
+
+<!--▼▼ハンバーガーメニューここから▼▼-->
+<div class="hm_wrap">
+	<input id="hm_menu" type="checkbox" name="hm_menu" class="hm_menu_check"/><a href="../PiyohTop/index.html"><img src="img/piyologo.png" width="120" alt="ぴよーとは"></a>
+	<label for="hm_menu" class="hm_btn"></label>
+	<h2 class="hm_title"><img src="img/button.png" alt=""></h2>
+		<nav class="hm_menu_wrap">
+			<ul class="hm_list">
+				<li><a href="../PiyohTop/index.html">&emsp;ぴよーTOP</a></li>
+				<li><a href="../PiyohIntroduction/what'sPiyoh.html">&emsp;ぴよーとは</a></li>
+				<li><a href="../PiyohNakama/Piyohnakama.html">&emsp;ぴよーずかん</a></li>
+				<li><a href="../PiyohNews/piyonews.html">&emsp;ぴよーニュース</a></li>
+				<li><a href="../PiyohGame/piyohgame.html">&emsp;ぴよ―ゲーム</a></li>
+				<li><a href="../PiyohUranai/PiyohUranaiTop.html">&emsp;ぴよーうらない</a></li>
+				<li><a href="../Piyohmanga/PiyohManga.html">&emsp;ぴよーまんが</a></li>
+				<li><a href="../PiyohGoods/PiyohGoods.html">&emsp;ぴよーグッズ</a></li>
+			</ul>
+		</nav>
+</div>
+<!--▲▲ハンバーガーメニューここまで▲▲-->
+<script>
+$(document).ready(function() {
+    var pagetop = $('.pagetop');
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+        }
+    });
+    pagetop.click(function () {
+        $('body, html').animate({ scrollTop: 0 }, 500);
+        return false;
+    });
+});
+</script>
+
+<!-- header -->
+
+</header>
+
+<article>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 style="font-size:150%;">ぴよーニュース</h1>
+<p>項目をクリックしてね！</p>
+<div id="piyo">
+<section><a href="pitohninki.html"><h2 style="text-align:center;">ぴよーキャラクター投票</h2><img src="img/midashi-01.png"></a></section>
+<section><a href="piyolinestamp.html"><h2 style="text-align:center;">ぴよーのスタンプ登場！</h2><img src="img/midashi-02.png"></a></section>
+</div><!--piyo-->
+<style>
+#wrapper{
+width:90%;
+margin:0 auto;
+}
+
+#piyo{
+margin-left:25%;}
+section{
+margin:4% 5% 5% 5%;
+float:left;
+}
+
+footer{
+clear:both;
+text-align:center;
+
+}
+</style><a href="../PiyohTop/index.html" style="margin:48%;">もどる</a>
+
+</article>
+<br>
+<footer>
+  <p><small>&copy;ぴよー～まるっこいモフモフ～.</small></p>
+</footer>
+<div id="stalker" style="left: 757px; top: 76px;">
+<style>
+#stalker {
+    position: fixed;
+    transition: left 1.5s ease-in-out 0s, top 1.5s ease-in-out 0s; /*1.5s は移動時間*/
+    -webkit-transition: left 1.5s ease-in-out 0s, top 1.5s ease-in-out 0s; /*webkit 系のクロスブラウザ*/
+    z-index: 9999;
+}
+</style>
+<script>
+(function() {
+    var doc = document;
+    var body = doc.body;
+    var stalker = doc.createElement("div");
+    stalker.id = "stalker";
+    stalker.innerHTML = '<img src="img/img1.gif"" alt="マウスストーカー" width="20%">'; //表示させる要素 画像であれば img 要素を入れる
+    body.appendChild(stalker);
+
+    body.addEventListener("mousemove", function(e) {
+          stalker.style.left = e.clientX - 35 + "px"; //35 は要素の長さの半分
+          stalker.style.top = e.clientY - 80 + "px"; //80 は縦の位置 各自調整
+    }, false);
+
+})()</script>
+
+</div><!--wrapper-->
+</body>
+</html>

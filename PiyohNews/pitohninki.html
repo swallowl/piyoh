@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+<style>img, object, embed, video {max-width: 100%;height:auto;}
+</style>
+<title>ぴよー人気投票</title>
+<link rel="shortcut icon" href="img/favicon.png" >
+<script type="text/javascript"> 
+<!-- 
+
+if (document.images) {
+
+	// 設定開始（使用する画像を設定してください）
+
+	// 通常の画像
+	var img0 = new Image();
+	img0.src = "img/piyo.png";
+
+	// ポイント時の画像1
+	var img1 = new Image();
+	img1.src = "img/piyotoha.png";
+
+	// ポイント時の画像2
+	var img2 = new Image();
+	img2.src = "img/piyonakama.png";
+
+	// ポイント時の画像3
+	var img3 = new Image();
+	img3.src = "img/piyonews.png";
+
+	// 設定終了
+	var img4 = new Image();
+	img4.src = "img/piyogame.png";
+
+	var img5 = new Image();
+	img5.src = "img/piyouranai.png";
+
+	var img6 = new Image();
+	img6.src = "img/piyomanga.png";
+
+	var img7 = new Image();
+	img7.src = "img/piyogoods.png";
+
+	var img8 = new Image();
+	img8.src = "img/piyojitai.png";
+
+
+}
+
+// ポイント時の処理
+function On(name) {
+
+	if (document.images) {
+
+		document.images['def'].src = eval(name + '.src');
+
+	}
+
+}
+
+// 放した時の処理
+function Off() {
+
+	if (document.images) {
+
+		document.images['def'].src = img0.src;
+
+	}
+
+}
+
+// -->
+</script>
+  <link rel="stylesheet" href="css/shibuya.css" media="all">
+  <link rel="stylesheet" href="css/menutop.css" media="all">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/menutop.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+<header>
+
+<!--▼▼ハンバーガーメニューここから▼▼-->
+<div class="hm_wrap">
+	<input id="hm_menu" type="checkbox" name="hm_menu" class="hm_menu_check"/><a href="../PiyohTop/index.html"><img src="img/piyologo.png" width="120" alt="ぴよーとは"></a>
+	<label for="hm_menu" class="hm_btn"></label>
+	<h2 class="hm_title"><img src="img/button.png" alt=""></h2>
+		<nav class="hm_menu_wrap">
+			<ul class="hm_list">
+				<li><a href="../PiyohTop/index.html">&emsp;ぴよーTOP</a></li>
+				<li><a href="../PiyohIntroduction/what'sPiyoh.html">&emsp;ぴよーとは</a></li>
+				<li><a href="../PiyohNakama/Piyohnakama.html">&emsp;ぴよーずかん</a></li>
+				<li><a href="../PiyohNews/piyonews.html">&emsp;ぴよーニュース</a></li>
+				<li><a href="../PiyohGame/piyohgame.html">&emsp;ぴよ―ゲーム</a></li>
+				<li><a href="../PiyohUranai/PiyohUranaiTop.html">&emsp;ぴよーうらない</a></li>
+				<li><a href="../Piyohmanga/PiyohManga.html">&emsp;ぴよーまんが</a></li>
+				<li><a href="../PiyohGoods/PiyohGoods.html">&emsp;ぴよーグッズ</a></li>
+			</ul>
+		</nav>
+</div>
+<!--▲▲ハンバーガーメニューここまで▲▲-->
+</header>
+<div id="wrapper" style="width:90%;margin:0 10%;">
+
+<article>
+
+<br>
+<br>
+<br>
+<br>
+
+<img src="img/piyokekka.png" style="margin-left:5%;">
+<!--<h1>～ぴよー人気投票結果～</h1>
+<section>
+<h2 id="ichi">第1位「うぐいす」と「きなこ」</h2>
+
+<img src="img/kekka-02.png" alt="piyoninkikekka">
+<img src="img/kekka-01.png" alt="piyoninkikekka">
+</section>
+<section>
+<h2 id="ni">第2位「しろ(まめ)」</h2>
+<img src="img/kekka-03.png" alt="piyoninkikekka">
+</section>
+<section>
+<h2 id="san">第3位「だいず」</h2>
+
+<img src="img/kekka-04.png" alt="piyoninkikekka">
+</section>
+<section>
+
+<h2>4位「うずら」「えだま(め)」「はな(まめ)」</h2>
+
+<img src="img/kekka-05.png" alt="piyoninkikekka">
+<img src="img/kekka-06.png" alt="piyoninkikekka">
+<img src="img/kekka-07.png" alt="piyoninkikekka">
+</section>
+<section>
+<h2>5位「くろ(まめ)」</h2>
+<img src="img/kekka-08.png" alt="piyoninkikekka">
+</section>
+<section>
+<h2>6位「あずき」</h2>
+<img src="img/kekka-09.png" alt="piyoninkikekka">
+</section>
+<section>
+<h2>7位「カフィ」「きぴよ」「金時)」</h2>
+<img src="img/kekka-10.png" alt="piyoninkikekka">
+<img src="img/kekka-11.png" alt="piyoninkikekka">
+<img src="img/kekka-12.png" alt="piyoninkikekka">
+</section>
+<section>
+<h2>8位「こげる」「エンドウ」</h2>
+<img src="img/kekka-13.png" alt="piyoninkikekka">
+<img src="img/kekka-14.png" alt="piyoninkikekka">
+</section>
+
+<p>次回のぴよー人気投票もお楽しみに！</p>
+<style>
+#wrapper{
+width:95%;
+margin:0 auto;}
+h1{font-size:180%;
+margin-top:2%;
+margin-bottom:4%;}
+section{
+float:left;
+}
+
+h2{
+color:navy;
+font-size:170%;
+}
+#ichi{margin-left:10%;}
+#ni,#san{margin:10% 0 10% 12%;
+}
+footer{clear:both;
+text-align:center;}
+p{
+clear:both;}
+</style>-->
+<a href="../PiyohTop/index.html"style="margin-left:48%;">もどる</a>
+</article>
+
+<footer style="text-align:center; margin-top:3%;">
+  <p><small>&copy;ぴよー～まるっこいモフモフ～.</small></p>
+</footer>
+</div>
+</body>
+</html>
