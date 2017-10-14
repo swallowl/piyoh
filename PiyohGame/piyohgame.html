@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ぴよーゲーム～</title>
+<link rel="shortcut icon" href="img/favicon.png" >
+
+  <link rel="stylesheet" href="css/shibuya.css" media="all">
+  <link rel="stylesheet" href="css/menutop.css" media="all">
+<script type="text/javascript" src="js/menutop.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="wrapper">
+<p class="pagetop"><a href="#wrap">　TOPへ<br><img src="img/img1.gif" width="15%" alt="" onclick="document.getElementById('target').src = 'img/img1.gif'">
+<img id="target" src="img/img1.gif"width="5%" alt=""></a></p>
+
+
+<!-- header -->
+
+<header>
+<!--▼▼ハンバーガーメニューここから▼▼-->
+<div class="hm_wrap">
+	<input id="hm_menu" type="checkbox" name="hm_menu" class="hm_menu_check"/><a href="../PiyohTop/index.html"><img src="img/piyologo.png" width="120" alt="ぴよーとは"></a>
+	<label for="hm_menu" class="hm_btn"></label>
+	<h2 class="hm_title"><img src="img/button.png" alt=""></h2>
+		<nav class="hm_menu_wrap">
+			<ul class="hm_list">
+			<li><a href="../PiyohTop/index.html">&emsp;ぴよーTOP</a></li>
+				<li><a href="../PiyohIntroduction/what'sPiyoh.html">&emsp;ぴよーとは</a></li>
+				<li><a href="../PiyohNakama/Piyohnakama.html">&emsp;ぴよーずかん</a></li>
+				<li><a href="../PiyohNews/piyonews.html">&emsp;ぴよーニュース</a></li>
+				<li><a href="../PiyohGame/piyohgame.html">&emsp;ぴよ―ゲーム</a></li>
+				<li><a href="../PiyohUranai/PiyohUranaiTop.html">&emsp;ぴよーうらない</a></li>
+				<li><a href="../Piyohmanga/PiyohManga.html">&emsp;ぴよーまんが</a></li>
+				<li><a href="../PiyohGoods/PiyohGoods.html">&emsp;ぴよーグッズ</a></li>
+			</ul>
+		</nav>
+</div>
+<!--▲▲ハンバーガーメニューここまで▲▲-->
+</header>
+<article>
+
+<section id="pazzle">
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2>ぴよーパズル</h2>
+<iframe src="piyohpazzle/Pazzle.html" width="200%" height="350px"></iframe>
+</section>
+<div id="piyohmekuri">
+<div id="nanidohikui">
+<a href="piyomekurieasy/piyohmekurieasy.html"><img src="img/piyo-01.png" ><p style="margin:-40% 0 0 20%;font-weight:bold;">ぴよーめくり</p></a>
+</div><!--nanidotakai-->
+
+
+<div id="nanidotakai">
+<a href="piyomekurimuzukasi/piyohmekurimuzukasi.html"><img src="img/piyo-02.png"><p style="margin:-5% 0 0 55%; font-weight:bold;">ぴよーめくり<br>&nbsp;&nbsp;むずかしい</p></a>
+</div><!--nanidohikui-->
+</div><!--piyohmekuri-->
+<style>
+body{    background: rgb(255, 250, 205);}
+#pazzle{width:23.5%;margin:0 auto;text-align:center;}
+#piyohmekuri{margin-top:-3%;}
+#nanidohikui{float:left; margin-left:35.5%}
+#nanidotakai img{margin-left:5%;}
+
+footer{
+clear:both;
+text-align:center;
+margin-top:1%;
+}
+</style>
+
+
+
+</article>
+<a href="../PiyohTop/index.html" style="margin:48%;">もどる</a>
+
+<footer>
+  <p><small>&copy;ぴよー～まるっこいモフモフ～.</small></p>
+</footer>
+</div><!--wrapper-->
+
+<script>$(document).ready(function() {
+    var pagetop = $('.pagetop');
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+        }
+    });
+    pagetop.click(function () {
+        $('body, html').animate({ scrollTop: 0 }, 500);
+        return false;
+    });
+});
+</script>
+</body>
+</html>
