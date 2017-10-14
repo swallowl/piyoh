@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ぴよー～まるっこいモフモフ～</title>
+<link rel="shortcut icon" href="img/favicon.png" >
+
+  <link rel="stylesheet" href="css/shibuya.css" media="all">
+  <link rel="stylesheet" href="css/what'sPiyoh.css" media="all">
+  <link rel="stylesheet" href="css/menutop.css" media="all">
+<script type="text/javascript" src="js/menutop.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="wrapper">
+<p class="pagetop"><a href="#wrap">　TOPへ<br><img src="img/img1.gif" width="15%" alt="" onclick="document.getElementById('target').src = 'img/img1.gif'">
+<img id="target" src="img/img1.gif"width="5%" alt=""></a></p>
+
+
+<!-- header -->
+
+<header>
+<!--▼▼ハンバーガーメニューここから▼▼-->
+<div class="hm_wrap">
+	<input id="hm_menu" type="checkbox" name="hm_menu" class="hm_menu_check"/><a href="../PiyohTop/index.html"><img src="img/piyologo.png" width="120" alt="ぴよーとは"></a>
+	<label for="hm_menu" class="hm_btn"></label>
+	<h2 class="hm_title"><img src="img/button.png" alt=""></h2>
+		<nav class="hm_menu_wrap">
+			<ul class="hm_list">
+				<li><a href="../PiyohTop/index.html">&emsp;ぴよーTOP</a></li>
+				<li><a href="../PiyohIntroduction/what'sPiyoh.html">&emsp;ぴよーとは</a></li>
+				<li><a href="../PiyohNakama/Piyohnakama.html">&emsp;ぴよーずかん</a></li>
+				<li><a href="../PiyohNews/piyonews.html">&emsp;ぴよーニュース</a></li>
+				<li><a href="../PiyohGame/piyohgame.html">&emsp;ぴよ―ゲーム</a></li>
+				<li><a href="../PiyohUranai/PiyohUranaiTop.html">&emsp;ぴよーうらない</a></li>
+				<li><a href="../Piyohmanga/PiyohManga.html">&emsp;ぴよーまんが</a></li>
+				<li><a href="../PiyohGoods/PiyohGoods.html">&emsp;ぴよーグッズ</a></li>
+			</ul>
+		</nav>
+</div>
+<!--▲▲ハンバーガーメニューここまで▲▲-->
+</header>
+<article>
+  <h1><img src="img/piyo-01.png" alt="ぴよーとは"></h1>
+
+<section id="piyo02">
+<p>　街のいたるところに出現する<br>まるっこいモフモフした生き物。<br>
+鳴き声は名前の通り「ぴよー」</p>
+<img src="img/piyo-02.png" alt="ぴよーとは">
+</section>
+<section id="piyo03">
+<img src="img/piyo-07.png" alt="ぴよーとは"><p>人懐っこくすぐに慣れる。<br>相手を気に入ると自分からそばに寄ってきて肩に乗ったりする。</p>
+</section>
+<section id="piyo04">
+<p>人の言葉がある程度分かるので、適度な意思疎通ができる。<br>
+けっこう賢い。</p>
+<img src="img/piyo-03.png" alt="ぴよーとは"></section>
+<section id="piyo05">
+<img src="img/piyo-04.png" alt="ぴよーとは"><p>　話が長かったり、<br>ぴよーの許容量を超えた<br>内容のときにはフリーズする。</p>
+</section>
+<section id="piyo06">
+<p>　ぴよーがたくさんいるときに自分のぴよーを「ぴよー！！」と呼びかけるとほかのぴよー含めてみんな一斉に振り向く。<br>
+　クラスに10人佐藤さんがいたとして、「佐藤さーん」って読んだらみんな返事する感じ。<br>
+　そのため、みんなそれぞれに名前を付けられていることが多い。</p>
+<img src="img/piyo-06.png" alt="ぴよーとは"></section>
+<section id="piyo07">
+<p>　ぴよーに「ぴよーは鳥なの？」と聞くと首をかしげる。<br>　本人もわからないらしい。
+</p><img src="img/piyo-05.png" alt="ぴよーとは"></section>
+<section id="piyo08">
+<p>　生まれたてのぴよーはきんかんサイズ。みかんサイズを経て、
+大人になるとグレープフルーツサイズになる。小玉スイカくらいのサイズのになるぴよーもいる。
+</p><img src="img/piyo-08.png" alt="ぴよーとは"></section>
+<section id="piyo09">
+<p>　モフモフの中に色んなものを入れることができるようで、「どこに入ってたの！？」というような大きさのものを突然出すことがある。</p><img src="img/piyo-09.png" alt="ぴよーとは">
+</section>
+<a href="../PiyohTop/index.html" style="margin:45%;">もどる</a>
+</article>
+
+<footer>
+  <p><small>&copy;ぴよー～まるっこいモフモフ～.</small></p>
+</footer>
+</div><!--wrapper-->
+
+<script>$(document).ready(function() {
+    var pagetop = $('.pagetop');
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+        }
+    });
+    pagetop.click(function () {
+        $('body, html').animate({ scrollTop: 0 }, 500);
+        return false;
+    });
+});
+</script>
+</body>
+</html>
